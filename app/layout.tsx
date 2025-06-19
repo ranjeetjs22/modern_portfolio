@@ -16,22 +16,22 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio - Modern Developer",
+  title: "Ranjeet - Modern Developer",
   description: "A modern portfolio showcasing exceptional development skills and creative projects",
   keywords: ["developer", "portfolio", "web development", "frontend", "backend", "fullstack"],
-  authors: [{ name: "Developer" }],
-  creator: "Developer",
+  authors: [{ name: "Ranjeet Patel" }],
+  creator: "Ranjeet",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://yourportfolio.com",
-    title: "Portfolio - Modern Developer",
+    url: "https://ranjettt.com",
+    title: "Ranjeet - Modern Developer",
     description: "A modern portfolio showcasing exceptional development skills and creative projects",
-    siteName: "Developer Portfolio",
+    siteName: "Rj Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Portfolio - Modern Developer",
+    title: "Rajeet - Modern Developer",
     description: "A modern portfolio showcasing exceptional development skills and creative projects",
   },
 };

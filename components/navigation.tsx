@@ -48,7 +48,7 @@ export function Navigation() {
             whileTap={{ scale: 0.95 }}
           >
             <a href="#home" className="text-2xl font-bold heading-font gradient-text">
-              Portfolio
+              Ranjeet Patel
             </a>
           </motion.div>
 

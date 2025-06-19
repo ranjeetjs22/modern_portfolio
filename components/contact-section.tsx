@@ -51,8 +51,8 @@ export function ContactSection() {
     {
       icon: Mail,
       title: "Email",
-      value: "hello@developer.com",
-      link: "mailto:hello@developer.com"
+      value: "ranjeetjs644@gmail.com",
+      link: "mailto:ranjeetjs644@gmail.com"
     },
     {
       icon: Phone,
@@ -63,7 +63,7 @@ export function ContactSection() {
     {
       icon: MapPin,
       title: "Location",
-      value: "San Francisco, CA",
+      value: "Ahmedabad, India",
       link: "https://maps.google.com"
     },
     {
@@ -233,7 +233,7 @@ export function ContactSection() {
                           value={formData.name}
                           onChange={handleInputChange}
                           required
-                          className="w-full px-4 py-3 glass-effect rounded-lg border-0 focus:ring-2 focus:ring-primary/50 transition-all duration-300 bg-background/50"
+                          className="w-full px-4 py-3 glass-effect rounded-lg border-0 focus:ring-1 focus:ring-primary/40 transition-all duration-300 bg-background/50"
                           placeholder="Your Name"
                         />
                       </div>
@@ -249,7 +249,7 @@ export function ContactSection() {
                           value={formData.email}
                           onChange={handleInputChange}
                           required
-                          className="w-full px-4 py-3 glass-effect rounded-lg border-0 focus:ring-2 focus:ring-primary/50 transition-all duration-300 bg-background/50"
+                          className="w-full px-4 py-3 glass-effect rounded-lg border-0 focus:ring-1 focus:ring-primary/40 transition-all duration-300 bg-background/50"
                           placeholder="your@email.com"
                         />
                       </div>
@@ -266,7 +266,7 @@ export function ContactSection() {
                         value={formData.subject}
                         onChange={handleInputChange}
                         required
-                        className="w-full px-4 py-3 glass-effect rounded-lg border-0 focus:ring-2 focus:ring-primary/50 transition-all duration-300 bg-background/50"
+                        className="w-full px-4 py-3 glass-effect rounded-lg border-0 focus:ring-1 focus:ring-primary/40 transition-all duration-300 bg-background/50"
                         placeholder="What's this about?"
                       />
                     </div>
@@ -282,7 +282,7 @@ export function ContactSection() {
                         onChange={handleInputChange}
                         required
                         rows={5}
-                        className="w-full px-4 py-3 glass-effect rounded-lg border-0 focus:ring-2 focus:ring-primary/50 transition-all duration-300 resize-none bg-background/50"
+                        className="w-full px-4 py-3 glass-effect rounded-lg border-0 focus:ring-1 focus:ring-primary/40 transition-all duration-300 resize-none bg-background/50"
                         placeholder="Tell me about your project..."
                       />
                     </div>
