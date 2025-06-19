@@ -1,18 +1,30 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Plus_Jakarta_Sans, JetBrains_Mono, Outfit } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 
-const inter = Inter({ 
+// Primary font - Plus Jakarta Sans (modern, clean, professional)
+const plusJakarta = Plus_Jakarta_Sans({ 
   subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap"
+  variable: "--font-sans",
+  display: "swap",
+  weight: ["200", "300", "400", "500", "600", "700", "800"]
 });
 
-const playfair = Playfair_Display({ 
+// Heading font - Outfit (stylish, modern, geometric)
+const outfit = Outfit({ 
   subsets: ["latin"],
-  variable: "--font-playfair",
-  display: "swap"
+  variable: "--font-heading",
+  display: "swap",
+  weight: ["300", "400", "500", "600", "700", "800", "900"]
+});
+
+// Monospace font - JetBrains Mono (perfect for code)
+const jetbrainsMono = JetBrains_Mono({ 
+  subsets: ["latin"],
+  variable: "--font-mono",
+  display: "swap",
+  weight: ["400", "500", "600", "700"]
 });
 
 export const metadata: Metadata = {
@@ -42,8 +54,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${inter.variable} ${playfair.variable}`}>
-      <body className={`${inter.className} antialiased`}>
+    <html lang="en" suppressHydrationWarning className={`${plusJakarta.variable} ${outfit.variable} ${jetbrainsMono.variable}`}>
+      <body className={`${plusJakarta.className} antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

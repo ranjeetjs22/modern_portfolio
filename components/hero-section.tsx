@@ -64,7 +64,7 @@ export function HeroSection() {
         >
           {/* Sparkle Icon */}
           <motion.div variants={itemVariants} className="flex justify-center">
-            <div className="p-4 glass-effect rounded-full">
+            <div className="p-4 glass-effect rounded-full ">
               <Sparkles className="w-8 h-8 text-primary" />
             </div>
           </motion.div>
