@@ -43,15 +43,15 @@ export function HeroSection() {
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Parallax Background Elements */}
       <Parallax speed={-20} className="absolute inset-0">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl floating-animation"></div>
+        <div className="absolute top-20 left-10 w-72 h-72 bg-neutral-200/10 dark:bg-neutral-700/10 rounded-full blur-3xl floating-animation"></div>
       </Parallax>
       
       <Parallax speed={-30} className="absolute inset-0">
-        <div className="absolute top-40 right-20 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl floating-animation" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-40 right-20 w-96 h-96 bg-neutral-300/8 dark:bg-neutral-600/8 rounded-full blur-3xl floating-animation" style={{ animationDelay: '2s' }}></div>
       </Parallax>
 
       <Parallax speed={-25} className="absolute inset-0">
-        <div className="absolute bottom-20 left-1/3 w-80 h-80 bg-indigo-500/20 rounded-full blur-3xl floating-animation" style={{ animationDelay: '4s' }}></div>
+        <div className="absolute bottom-20 left-1/3 w-80 h-80 bg-neutral-400/6 dark:bg-neutral-500/6 rounded-full blur-3xl floating-animation" style={{ animationDelay: '4s' }}></div>
       </Parallax>
 
       {/* Main Content */}
