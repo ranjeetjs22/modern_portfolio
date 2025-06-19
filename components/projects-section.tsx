@@ -17,74 +17,74 @@ export function ProjectsSection() {
     }
   }, [isInView, mainControls]);
 
-  const projects = [
-    {
-      id: 1,
-      title: "E-Commerce Platform",
-      description: "A modern, full-stack e-commerce solution with real-time inventory management, payment processing, and admin dashboard.",
-      image: "/api/placeholder/600/400",
-      tags: ["Next.js", "TypeScript", "Stripe", "MongoDB", "Tailwind CSS"],
-      github: "https://github.com",
-      live: "https://demo.com",
-      featured: true,
-      color: "from-blue-500 to-purple-600"
-    },
-    {
-      id: 2,
-      title: "AI-Powered Dashboard",
-      description: "Analytics dashboard with AI-driven insights, real-time data visualization, and predictive analytics for business intelligence.",
-      image: "/api/placeholder/600/400",
-      tags: ["React", "Python", "TensorFlow", "D3.js", "PostgreSQL"],
-      github: "https://github.com",
-      live: "https://demo.com",
-      featured: true,
-      color: "from-green-500 to-teal-600"
-    },
-    {
-      id: 3,
-      title: "Social Media App",
-      description: "Real-time social platform with messaging, content sharing, and advanced privacy controls. Built for scale and performance.",
-      image: "/api/placeholder/600/400",
-      tags: ["React Native", "Node.js", "Socket.io", "AWS", "Redis"],
-      github: "https://github.com",
-      live: "https://demo.com",
-      featured: true,
-      color: "from-pink-500 to-orange-500"
-    },
-    {
-      id: 4,
-      title: "Crypto Trading Bot",
-      description: "Automated trading bot with machine learning algorithms for cryptocurrency markets. Features risk management and backtesting.",
-      image: "/api/placeholder/600/400",
-      tags: ["Python", "Pandas", "Binance API", "ML", "Docker"],
-      github: "https://github.com",
-      live: "https://demo.com",
-      featured: false,
-      color: "from-yellow-500 to-red-500"
-    },
-    {
-      id: 5,
-      title: "Portfolio Website",
-      description: "Modern, responsive portfolio website with advanced animations, dark/light themes, and performance optimization.",
-      image: "/api/placeholder/600/400",
-      tags: ["Next.js", "Framer Motion", "Tailwind", "Vercel"],
-      github: "https://github.com",
-      live: "https://demo.com",
-      featured: false,
-      color: "from-indigo-500 to-purple-500"
-    },
-    {
-      id: 6,
-      title: "Task Management Tool",
-      description: "Collaborative project management tool with real-time updates, team collaboration, and advanced project tracking.",
-      image: "/api/placeholder/600/400",
-      tags: ["Vue.js", "Express", "MongoDB", "Socket.io"],
-      github: "https://github.com",
-      live: "https://demo.com",
-      featured: false,
-      color: "from-cyan-500 to-blue-500"
-    }
-  ];
+ const projects = [
+  {
+    id: 1,
+    title: "AI Code Review Assistant",
+    description: "An AI‑powered GitHub‑integrated tool that fetches pull requests and offers intelligent code suggestions with real‑time feedback and a minimal UI.",
+    image: "https://img.freepik.com/free-vector/hand-drawn-flat-design-npl-illustration_23-2149262968.jpg?semt=ais_hybrid&w=740",
+    tags: ["Next.js", "TypeScript", "Zustand", "Tailwind CSS", "GitHub OAuth"],
+    github: "https://github.com/your-username/ai-code-review-assistant",
+    live: "https://your-deployment-url.com",
+    featured: true,
+    color: "from-indigo-500 to-violet-600"
+  },
+  {
+    id: 2,
+    title: "Social Media Web Application Backend",
+    description: "A robust backend for a social media platform with secure user auth, video uploads, tweet functionality, and channel subscriptions using RESTful APIs.",
+    image: "https://img.freepik.com/free-vector/social-tree-concept-illustration_114360-4947.jpg?w=740",
+    tags: ["Node.js", "Express.js", "MongoDB", "JWT", "Cloudinary"],
+    github: "https://github.com/your-username/social-media-backend",
+    live: "",
+    featured: true,
+    color: "from-rose-500 to-pink-600"
+  },
+  {
+    id: 3,
+    title: "Social Media App",
+    description: "Real-time social platform with messaging, content sharing, and advanced privacy controls. Built for scale and performance.",
+    image: "https://img.freepik.com/free-vector/chatting-concept-illustration_114360-2427.jpg?w=740",
+    tags: ["React Native", "Node.js", "Socket.io", "AWS", "Redis"],
+    github: "https://github.com",
+    live: "https://demo.com",
+    featured: true,
+    color: "from-pink-500 to-orange-500"
+  },
+  {
+    id: 4,
+    title: "Crypto Trading Bot",
+    description: "Automated trading bot with machine learning algorithms for cryptocurrency markets. Features risk management and backtesting.",
+    image: "https://img.freepik.com/free-vector/bitcoin-trading-concept-illustration_114360-10773.jpg?w=740",
+    tags: ["Python", "Pandas", "Binance API", "ML", "Docker"],
+    github: "https://github.com",
+    live: "https://demo.com",
+    featured: false,
+    color: "from-yellow-500 to-red-500"
+  },
+  {
+    id: 5,
+    title: "Portfolio Website",
+    description: "Modern, responsive portfolio website with advanced animations, dark/light themes, and performance optimization.",
+    image: "https://img.freepik.com/free-vector/portfolio-concept-illustration_114360-7969.jpg?w=740",
+    tags: ["Next.js", "Framer Motion", "Tailwind", "Vercel"],
+    github: "https://github.com",
+    live: "https://demo.com",
+    featured: false,
+    color: "from-indigo-500 to-purple-500"
+  },
+  {
+    id: 6,
+    title: "Task Management Tool",
+    description: "Collaborative project management tool with real-time updates, team collaboration, and advanced project tracking.",
+    image: "https://img.freepik.com/free-vector/project-management-illustration_114360-5922.jpg?w=740",
+    tags: ["Vue.js", "Express", "MongoDB", "Socket.io"],
+    github: "https://github.com",
+    live: "https://demo.com",
+    featured: false,
+    color: "from-cyan-500 to-blue-500"
+  }
+];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -104,7 +104,7 @@ export function ProjectsSection() {
       y: 0,
       transition: {
         duration: 0.6,
-        ease: "easeOut",
+        ease: [0.25, 0.25, 0.25, 0.75] as [number, number, number, number],
       },
     },
   };
@@ -141,28 +141,46 @@ export function ProjectsSection() {
               <motion.div
                 key={project.id}
                 variants={itemVariants}
-                className={`grid lg:grid-cols-2 gap-8 lg:gap-12 items-center ${
-                  index % 2 === 1 ? "lg:grid-flow-col-dense" : ""
-                }`}
+                className={`grid lg:grid-cols-2 gap-8 lg:gap-12 items-center ${index % 2 === 1 ? "lg:grid-flow-col-dense" : ""
+                  }`}
               >
                 {/* Project Image */}
-                <motion.div 
+                <motion.div
                   className={`relative group ${index % 2 === 1 ? "lg:col-start-2" : ""}`}
                   whileHover={{ scale: 1.02 }}
                 >
                   <div className="glass-effect p-4 rounded-2xl overflow-hidden">
                     <div className="relative aspect-video rounded-xl overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900">
-                      {/* Placeholder for project image */}
-                      <div className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-20`}></div>
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="text-center space-y-4">
-                          <div className="w-16 h-16 mx-auto glass-effect rounded-full flex items-center justify-center">
-                            <Code2 className="w-8 h-8 text-primary" />
+                      {/* Project Image */}
+                      <img 
+                        src={project.image}
+                        alt={project.title}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        loading="lazy"
+                        onError={(e) => {
+                          // Fallback to placeholder if image fails to load
+                          const img = e.currentTarget;
+                          const fallback = img.nextElementSibling as HTMLElement;
+                          img.style.display = 'none';
+                          if (fallback) {
+                            fallback.style.display = 'flex';
+                          }
+                        }}
+                      />
+                      
+                      {/* Fallback placeholder (hidden by default) */}
+                      <div className="absolute inset-0 items-center justify-center hidden bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900">
+                        <div className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-20`}></div>
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <div className="text-center space-y-4">
+                            <div className="w-16 h-16 mx-auto glass-effect rounded-full flex items-center justify-center">
+                              <Code2 className="w-8 h-8 text-primary" />
+                            </div>
+                            <p className="text-sm text-muted-foreground">Project Screenshot</p>
                           </div>
-                          <p className="text-sm text-muted-foreground">Project Screenshot</p>
                         </div>
                       </div>
-                      
+
                       {/* Overlay */}
                       <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
                         <motion.a
@@ -187,7 +205,7 @@ export function ProjectsSection() {
                 </motion.div>
 
                 {/* Project Info */}
-                <motion.div 
+                <motion.div
                   className={`space-y-6 ${index % 2 === 1 ? "lg:col-start-1 lg:row-start-1" : ""}`}
                   variants={itemVariants}
                 >
@@ -196,11 +214,11 @@ export function ProjectsSection() {
                       <Sparkles className="w-5 h-5 text-primary" />
                       <span className="text-sm font-medium text-primary">Featured Project</span>
                     </div>
-                    
+
                     <h3 className="text-2xl md:text-3xl font-bold heading-font">
                       {project.title}
                     </h3>
-                    
+
                     <p className="text-muted-foreground leading-relaxed">
                       {project.description}
                     </p>
@@ -229,7 +247,7 @@ export function ProjectsSection() {
                       <Eye className="w-4 h-4" />
                       <span>Live Demo</span>
                     </motion.a>
-                    
+
                     <motion.a
                       href={project.github}
                       className="inline-flex items-center space-x-2 px-6 py-3 border border-primary text-primary rounded-full font-semibold glass-effect hover:bg-primary hover:text-primary-foreground transition-all duration-300"
@@ -250,7 +268,7 @@ export function ProjectsSection() {
             <h3 className="text-2xl md:text-3xl font-bold heading-font text-center">
               Other Notable Projects
             </h3>
-            
+
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {otherProjects.map((project, index) => (
                 <motion.div
@@ -265,7 +283,7 @@ export function ProjectsSection() {
                     <div className={`w-12 h-12 bg-gradient-to-br ${project.color} rounded-lg flex items-center justify-center`}>
                       <Code2 className="w-6 h-6 text-white" />
                     </div>
-                    
+
                     <div className="flex space-x-2">
                       <motion.a
                         href={project.github}
@@ -285,7 +303,7 @@ export function ProjectsSection() {
                       </motion.a>
                     </div>
                   </div>
-                  
+
                   <div className="space-y-2">
                     <h4 className="text-lg font-semibold group-hover:text-primary transition-colors duration-200">
                       {project.title}
@@ -294,7 +312,7 @@ export function ProjectsSection() {
                       {project.description}
                     </p>
                   </div>
-                  
+
                   <div className="flex flex-wrap gap-1">
                     {project.tags.slice(0, 3).map((tag, tagIndex) => (
                       <span
