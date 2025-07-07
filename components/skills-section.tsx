@@ -66,7 +66,6 @@ export function SkillsSection() {
       y: 0,
       transition: {
         duration: 0.6,
-        ease: "easeOut",
       },
     },
   };
@@ -78,7 +77,6 @@ export function SkillsSection() {
       x: 0,
       transition: {
         duration: 0.8,
-        ease: "easeOut",
       },
     },
   };
@@ -138,7 +136,6 @@ export function SkillsSection() {
                           transition={{
                             duration: 1.5,
                             delay: groupIndex * 0.2 + techIndex * 0.1,
-                            ease: "easeOut"
                           }}
                         />
                       </div>
@@ -168,7 +165,6 @@ export function SkillsSection() {
                   transition={{
                     duration: 0.5,
                     delay: index * 0.05,
-                    ease: "easeOut"
                   }}
                   whileHover={{ scale: 1.1, y: -2 }}
                 >
@@ -196,7 +192,6 @@ export function SkillsSection() {
                   transition={{
                     duration: 0.6,
                     delay: index * 0.1,
-                    ease: "easeOut"
                   }}
                 >
                   {tech}

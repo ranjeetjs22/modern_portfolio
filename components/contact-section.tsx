@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { motion, useAnimation, useInView } from "framer-motion";
+import { motion, useAnimation, useInView, type Variants } from "framer-motion";
 import { Parallax } from "react-scroll-parallax";
 import { Mail, MessageCircle, Phone, MapPin, Send, CheckCircle } from "lucide-react";
 
@@ -74,7 +74,7 @@ export function ContactSection() {
     }
   ];
 
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -85,14 +85,13 @@ export function ContactSection() {
     },
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: 50 },
     visible: {
       opacity: 1,
       y: 0,
       transition: {
         duration: 0.6,
-        ease: "easeOut",
       },
     },
   };
@@ -207,7 +206,7 @@ export function ContactSection() {
                   <motion.div
                     className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto"
                     animate={{ rotate: 360 }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    transition={{ duration: 0.8 }}
                   >
                     <CheckCircle className="w-8 h-8 text-green-500" />
                   </motion.div>
@@ -300,7 +299,7 @@ export function ContactSection() {
                         <motion.div
                           className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full"
                           animate={{ rotate: 360 }}
-                          transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
+                          transition={{ duration: 1, repeat: Infinity }}
                         />
                         <span>Sending...</span>
                       </>
